@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { ui, t } from '../i18n/lang'
 import LangToggle from './LangToggle.vue'
-
+const cvUrl = `${import.meta.env.BASE_URL}CV_Filimon_Erno_Rubik.pdf`
 const links = [
   { id: 'about', label: ui.nav.about },
   { id: 'experience', label: ui.nav.experience },
@@ -65,7 +65,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <div class="hidden md:flex items-center gap-3">
 
         <a
-          :href="`/CV_Filimon_Erno_Rubik.pdf`"
+          :href="cvUrl"
           download
           class="inline-flex items-center gap-2 rounded-md border border-signal/40 px-4 py-2 text-sm font-medium text-white hover:bg-signal/10 hover:border-signal transition-colors font-mono"
         >
@@ -104,7 +104,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         </li>
         <li class="pt-4">
           <a
-            href="/CV_Filimon_Erno_Rubik.pdf"
+            :href="cvUrl"
             download
             class="block text-center rounded-md border border-signal/40 py-2.5 text-white font-mono text-sm"
           >

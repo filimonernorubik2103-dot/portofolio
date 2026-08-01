@@ -32,7 +32,7 @@ export const stats = [
 export const education = {
   institution: 'Universitas Proklamasi',
   degree: 'Bachelor of Industrial Engineering',
-  period: { id: '2022 – Sekarang', en: '2022 – Present' },
+  period: { id: '2022 – 2026', en: '2022 – 2026' },
 }
 
 export const experience = [

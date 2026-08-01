@@ -1,6 +1,7 @@
 <script setup>
 import { profile } from '../data/cv'
 import { ui, t } from '../i18n/lang'
+const cvUrl = `${import.meta.env.BASE_URL}CV_Filimon_Erno_Rubik.pdf`
 </script>
 
 <template>
@@ -31,7 +32,7 @@ import { ui, t } from '../i18n/lang'
           {{ profile.phone }}
         </a>
         <a
-          href="/CV_Filimon_Erno_Rubik.pdf"
+          :href="cvUrl"
           download
           class="inline-flex items-center gap-2 rounded-md border border-white/20 px-6 py-3.5 font-semibold text-white text-sm hover:border-signal/60 hover:bg-white/5 transition-all duration-300"
         >

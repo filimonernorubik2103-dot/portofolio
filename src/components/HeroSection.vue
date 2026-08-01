@@ -2,6 +2,7 @@
 import { profile } from '../data/cv'
 import { ui, t } from '../i18n/lang'
 import profileImg from '../assets/profile.jpeg'
+const cvUrl = `${import.meta.env.BASE_URL}CV_Filimon_Erno_Rubik.pdf`
 </script>
 
 <template>
@@ -37,7 +38,7 @@ import profileImg from '../assets/profile.jpeg'
             <span class="transition-transform group-hover:translate-x-1">→</span>
           </button>
           <a
-            href="/CV_Filimon_Erno_Rubik.pdf"
+            :href="cvUrl"
             download
             class="inline-flex items-center gap-2 rounded-md border border-white/20 px-6 py-3.5 font-body font-semibold text-white text-sm hover:border-signal/60 hover:bg-white/5 transition-all duration-300"
           >
